@@ -1,0 +1,39 @@
+body{
+	box-sizing: border-box;
+	display: flex;
+}
+
+header{
+	width: 15.082956259vw;
+	background-color: #3E495B;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+
+}
+
+main{
+	width: 84.917043741vw;
+}
+
+img.profile{
+	height: 6.060606vw;
+	width: 6.060606vw;
+	border-radius: 50%;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+li{
+	display: inline;
+}
+
+hr.nav{
+	background: #3C4456;
+	height: 2px;
+	border: 0;
+}
