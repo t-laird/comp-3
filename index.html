@@ -47,12 +47,12 @@
 	</header>
 
 	<main>
-		<div class="top-bar">
-			<button class="collapse-menu top-menu"><i class="fa fa-caret-left" aria-hidden="true"></i>
-				<i class="fa fa-bars" aria-hidden="true"></i>
+		<section class="top-bar">
+			<button class="collapse-menu top-menu"><i class="menu-caret1 fa fa-caret-left" aria-hidden="true"></i>
+				<i class="fa fa-bars" aria-hidden="true"></i> <i class="fa menu-caret2" aria-hidden="true"></i>
 			</button>
-			<input type="text" class="search" placeholder="&#xf002; Search for a job, task or resume">
-			<button class="add-user top-menu">
+			<input type="text" class="search" placeholder="&#xf002; Search for a job, task or resume"style="border:1px solid #F1F1F1">
+			<button class="add-user top-menu no-left-border">
 					<i class="fa fa-user-plus" aria-hidden="true"></i>					
 			</button>
 			<button class="top-menu">
@@ -61,12 +61,13 @@
 			<button class="top-menu">
 					<i class="fa fa-th" aria-hidden="true"></i>			
 			</button>
-		</div>
+		</section>
 
 		<div class="job-title">
 			<div class="left">
 				<h2> Customer Service Representative </h2>
 				<h5> <i class="fa navi fa-map-marker" aria-hidden="true"></i>San Fransisco, CA</h5>
+				<h5> -</h5>
 				<h5 class="previewlink"> Preview this post </h5>
 			</div>
 			<div class="right">
@@ -88,93 +89,108 @@
 				<li>ACTIVITY</li>
 				<li>BROADCAST</li>
 				<li>NOTIFICATIONS</li>
+				<li class="spacer" hidden></li>
 			</ul>
-
+			<div class="bottom-background">
+			
 			<section class="graphs">
 				<div class="left-graphs">
-					<div class="graph-circle"></div>
-					<div class="graph-circle"></div>
-					<div class="graph-circle"></div>
-					<button class="main-button">TOTALS - Out of 5,238 views</button>
+					<div class="wrapper" data-anim="base wrapper">
+							<!-- <h1> 1234</h1> -->
+						<div class="circle-grey" data-anim="base left"></div>
+						<div class="circle-color circle1" data-anim="base right"></div>	
+						</div>
+					<div class="wrapper" data-anim="base wrapper">
+						<div class="circle-grey" data-anim="base left"></div>
+						<div class="circle-color circle2" data-anim="base right"></div>	
+					</div>
+					<div class="wrapper" data-anim="base wrapper">
+						<div class="circle-grey" data-anim="base left"></div>
+						<div class="circle-color circle3" data-anim="base right"></div>	
+					</div>
+						<button class="main-button">TOTALS - Out of 5,238 views</button>
 				</div>
 				<div class="right-graphs">
+					<img class="bar-graph" src="images/graph.png">
 					<div class="bar-graph"></div>
 					<button class="main-button">APPLICANTS/DAY</button>
 				</div>
 			</section>
+<div class="graph-collapse-section">
+	<hr> <button class="top-button main-button collapse"><i class="fa collapse-icon fa-angle-up" aria-hidden="true"></i>
+	</button> <hr>
+</div>
 
-			<hr> *collapse button here*
-
-			<section class="job-description">
-				<table>
-					<th>JOB DESCRIPTION <button class="edit">EDIT</button></th>
-					<tr>
-						<td>POSITION TITLE</td>
-						<td>Customer Service Representative</td>
-					</tr>
-					<tr>
-						<td>LOCATION</td>
-						<td>San Fransisco CA</td>
-					</tr>
-					<tr>
-						<td>EMPLOYMENT TYPE</td>
-						<td>Full-time</td>
-					</tr>
-					<tr>
-						<td>EXPERIENCE</td>
-						<td>Mid-level</td>
-					</tr>
-					<tr>
-						<td>STATUS</td>
-						<td>Open</td>
-					</tr>
-					<tr>
-						<td>DESCRIPTION</td>
-						<td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsib le for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwich.</td>
-					</tr>
-					<tr>
-						<td>HIRING LEAD</td>
-						<td>Tom Tizzy</td>
-					</tr>
-					<tr>
-						<td>APPROVED SALARY</td>
-						<td>$58,000</td>
-					</tr>
-				</table>
+			<div class="bottom-section">
+				<section class="job-description">
+				<dl>
+					<div class="tableheader"><dt>JOB DESCRIPTION </dt>
+					<dd><button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button></dd>  </div>
+					<div class="job-listing after-border-fixes"><dt>POSITION TITLE</dt>
+					<dd>Customer Service Representative</dd> </div>
+					<div class="job-listing both-border-fixes"><dt>LOCATION</dt>
+					<dd>San Fransisco CA</dd> </div>
+					<div class="job-listing both-border-fixes"><dt>EMPLOYMENT TYPE</dt>
+					<dd>Full-time</dd> </div>
+					<div class="job-listing both-border-fixes"><dt>EXPERIENCE</dt>
+					<dd>Mid-level</dd> </div>
+					<div class="job-listing both-border-fixes"><dt>STATUS</dt>
+					<dd>Open</dd> </div>
+					<div class="job-listing both-border-fixes"><dt class="top-align">DESCRIPTION</dt>
+					<dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsib le for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwich.</dd> </div>
+					<div class="job-listing both-border-fixes"><dt>HIRING LEAD</dt>
+					<dd>Tom Tizzy</dd> </div>
+					<div class="job-listing before-border-fixes dl-noborder"><dt>APPROVED SALARY</dt>
+					<dd>$58,000</dd> </div>
+				</dl>
 			</section>
 
 			<section class="share">
-				<button class="facebook"></button>
-				<button class="twitter"></button>
-				<button class="linkedin"></button>
-				
-				<div>
-					<h3> Link to this Job</h3>
-					<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
-					<input type="text" placeholder="copy this link">
-					<button class="copy">Copy</button>
+				<div class="bottom-right">
+					<div class="social-link facebook"><i class="fa social-icon fa-facebook" aria-hidden="true"> </i>Post to Facebook
+					</div>
+					<div class="social-link twitter"> <i class="fa social-icon fa-twitter" aria-hidden="true"> </i>Tweet this Job
+					</div>
+					<div class="social-link linkedin"><i class="fa social-icon fa-linkedin-square" aria-hidden="true"></i>
+						Post to LinkedIn </div>
+					
+					<div class="copy-section">
+						<div>
+						<h3> <i class="fa fa-globe" aria-hidden="true"></i>
+							Link to this Job</h3>
+						<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
+						<div class="copy-buttonlink">
+						<p class="copy-links"> http://www.google.com/ride-order/longer-hyperlink </p>
+						<button class="copy">Copy</button></div>
+						<hr class="socialhr">
+					</div>
+					<div>
+						<h3> <i class="fa fa-qrcode" aria-hidden="true"></i>
+							Use the Button Widget</h3>
+						<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
+						<div class="copy-buttonlink">
+						<p class="copy-links"> http://www.google.com/ride-order/longer-hyperlink </p>
+						<button class="copy">Copy</button></div>
+						<hr class="socialhr">
+					</div>
+					<div>
+						<h3> <i class="fa fa-paper-plane" aria-hidden="true"></i>
+							Upload Resumes by Email</h3>
+						<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
+						<div class="copy-buttonlink">
+						<p class="copy-links"> http://www.google.com/ride-order/longer-hyperlink </p>
+						<button class="copy">Copy</button></div>
+					</div>
 				</div>
-				<div>
-					<h3> Use the Button Widget</h3>
-					<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
-					<input type="text" placeholder="copy this link">
-					<button class="copy">Copy</button>
 				</div>
-				<div>
-					<h3> Upload Resumes by Email</h3>
-					<h6> as;lfas;dflajlkfja place holdfwer lkdfj etaet text</h6>
-					<input type="text" placeholder="copy this link">
-					<button class="copy">Copy</button>
-				</div>
-
 			</section>
+		</div>
+</div>
 
 
 
 
-
-
-
+			<script src="https://d3js.org/d3.v4.min.js"></script>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<script>window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>')</script>
 			<script src="scripts/script.js" type="text/javascript"></script>
