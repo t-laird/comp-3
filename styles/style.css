@@ -136,6 +136,8 @@ button{
 
 section.top-bar{
 	display: flex;
+	/* position:fixed;
+	top: 0; */
 }
 
 .top-menu{
@@ -229,12 +231,18 @@ h5{
 	cursor: pointer;
 }
 
-.total-button{
+.total-button,
+.applicants-button{
 	width: 100%;
 	align-self: flex-start;
 }
 
 .total-button button{
+	margin: -40px auto 0px auto;
+	display: block;
+}
+
+.applicants-button button{
 	margin: 0px auto;
 	display: block;
 }
@@ -311,6 +319,14 @@ h5{
 	flex-wrap: wrap;
 }
 
+.circles,
+.text{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	zoom: 2;
+}
+
 .graph-text{
 	width: 150px;
 	text-align: center;
@@ -329,8 +345,6 @@ h5{
 	width: 150px; /* Set the size of the progress bar */
 	height: 150px;
 	margin-top: 25px;
-	/* position: absolute; Enable clipping */
-	clip: rect(0px, 150px, 150px, 7.5px); /* Hide half of the progress bar */
 }
 
 .wrapper-text{
@@ -339,34 +353,27 @@ h5{
 	right: 37.5px;
 }
 /* Set the sizes of the elements that make up the progress bar */
-.circle-color{
+
+.circle-specs{
 	width: 120px;
 	height: 120px;
 	border-radius: 75px;
 	position: absolute;
+}
+
+.circle-color{
 	clip: rect(0px, 75px, 150px, 0px);
 }
+
 .circle-color2{
-	width: 120px;
-	height: 120px;
-	border-radius: 75px;
-	position: absolute;
 	clip: rect(0px, 150px, 75px, 75px);
 }
 
 .circle-color3{
-	width: 120px;
-	height: 120px;
-	border-radius: 75px;
-	position: absolute;
 	clip: rect(75px, 75px, 150px, 0px);
 }
 
 .circle-grey{
-	width: 120px;
-	height: 120px;
-	border-radius: 75px;
-	position: absolute;
 	border: 10px solid #E1E7ED;
 	clip: rect(0px, 150px, 150px, 0px);
 }
@@ -673,6 +680,10 @@ div.tableheader{
 	cursor: pointer;
 }
 
+.social-link:hover {
+	box-shadow: 1px 1px 5px #555 inset;
+}
+
 i.social-icon{
 	font-size: 15px;
 	float: left;
@@ -684,6 +695,10 @@ i.social-icon{
 .copy{
 	height: 30px;
 	display: inline-block;
+}
+
+.copy:hover{
+	box-shadow: 1px 1px 5px #555 inset;
 }
 
 .copy-links{
@@ -747,8 +762,33 @@ button.copy{
 	cursor: pointer;
 }
 
+@media screen and (max-width: 2100px){
+	.circles,
+	.text{
+		zoom: 1.5;
+	}
+}
 
+@media screen and (max-width: 1660px){
+	.circles,
+	.text{
+		zoom: 1.2;
+	}
+}
 
+@media screen and (max-width: 1350px){
+	.circles,
+	.text{
+		zoom: 0.9;
+	}
+}
+
+@media screen and (max-width: 1050px){
+	.circles,
+	.text{
+		zoom: 0.6;
+	}
+}
 
 @media screen and (max-width: 880px){	
 	.job-title{
@@ -797,6 +837,11 @@ button.copy{
 
 	.left-graphs{
 		padding: 0px 25px 0px 25px;
+	}
+
+	.circles,
+	.text{
+		zoom: 1;
 	}
 
 
@@ -855,12 +900,20 @@ header{
 		display: inline-block;
 		box-sizing: border-box;
 	}
+	.circles,
+	.text{
+		zoom: 0.8;
+	}
 }
 
 @media screen and (max-width: 445px){
 	li.leftnav,
 	li.category{
 		width: 49.2%;		
+	}
+	.circles,
+	.text{
+		zoom: 0.7;
 	}
 }
 
@@ -878,10 +931,18 @@ header{
 		font-size: 11px;
 		width: 95px;
 	}
+	.circles,
+	.text{
+		zoom: 0.6;
+	}
 }
 
 @media screen and (max-width: 310px){
 	body{
 		min-width: 300px;
+	}
+	.circles,
+	.text{
+		zoom: 0.55;
 	}
 }
