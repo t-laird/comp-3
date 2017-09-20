@@ -1,6 +1,6 @@
 <!doctype = html>
 
-<html>
+<html lang="en">
 
 <head>
 	<link href="styles/normalize.css" type="text/css" rel="stylesheet">
@@ -12,80 +12,84 @@
 </head>
 
 <body>
-	<!-- <div class="header-wrap"> -->
 	<header>
-		<img class="profile" src="images/IMG_1134.JPG">
+		<img class="profile" src="images/IMG_1134.JPG" alt="profile picture for the user on the website">
 		<h5 class="profile-name"> Thomas Laird <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-
 		<hr class="headerhr">
 
-
-		<nav>
+		<nav role="navigation">
 			<ul class="leftnav">
 				<p class="categories"> Main </p>
-				<li class="leftnav"><i class="fa navi fa-home" aria-hidden="true"></i>HOME</li>
-				<li class="leftnav"><i class="fa navi fa-briefcase" aria-hidden="true"></i>JOBS</li>
-				<li class="leftnav"><i class="fa navi fa-file-text-o" aria-hidden="true"></i>RESUMES</li>
-				<li class="leftnav"><i class="fa navi fa-tasks" aria-hidden="true"></i>TASKS</li>
-				<li class="leftnav"><i class="fa navi fa-calendar" aria-hidden="true"></i>CALENDAR</li>
+					<li class="leftnav"><i class="fa navi fa-home" aria-hidden="true"></i>HOME</li>
+					<li class="leftnav"><i class="fa navi fa-briefcase" aria-hidden="true"></i>JOBS</li>
+					<li class="leftnav"><i class="fa navi fa-file-text-o" aria-hidden="true"></i>RESUMES</li>
+					<li class="leftnav"><i class="fa navi fa-tasks" aria-hidden="true"></i>TASKS</li>
+					<li class="leftnav"><i class="fa navi fa-calendar" aria-hidden="true"></i>CALENDAR</li>
 			</ul>
 			<hr class="headerhr">
 			<ul class="leftnav">
 				<p class="categories"> Admin </p>
-				<li class="leftnav"><i class="fa navi fa-users" aria-hidden="true"></i>USERS</li>
-				<li class="leftnav"><i class="fa navi fa-map-marker" aria-hidden="true"></i> LOCATIONS</li>
-				<li class="leftnav"><i class="fa navi fa-sitemap" aria-hidden="true"	></i>WORKFLOWS</li>
-				<li class="leftnav"><i class="fa navi fa-book" aria-hidden="true"	></i>JOB BOARDS</li>
-				<li class="leftnav"><i class="fa navi fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
+					<li class="leftnav"><i class="fa navi fa-users" aria-hidden="true"></i>USERS</li>
+					<li class="leftnav"><i class="fa navi fa-map-marker" aria-hidden="true"></i> LOCATIONS</li>
+					<li class="leftnav"><i class="fa navi fa-sitemap" aria-hidden="true"	></i>WORKFLOWS</li>
+					<li class="leftnav"><i class="fa navi fa-book" aria-hidden="true"	></i>JOB BOARDS</li>
+					<li class="leftnav"><i class="fa navi fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
 			</ul>
 			<hr class="headerhr">
 			<ul class="leftnav">
 				<p class="categories"> Categories </p>
-				<li class="category checkbox"><i class="fa navi yellowsquare fa-square" aria-hidden="true"></i>Administration</li>
-				<li class="category checkbox"><i class="fa navi  bluesquare fa-square" aria-hidden="true"></i>Design</li>
-				<li class="category checkbox"><i class="fa navi redsquare fa-square" aria-hidden="true"></i>Executive</li>
-				<li class="category checkbox"><i class="fa navi greensquare fa-square" aria-hidden="true"></i>Human Resources</li>
+					<li class="category checkbox"><i class="fa navi yellowsquare fa-square" aria-hidden="true"></i>Administration</li>
+					<li class="category checkbox"><i class="fa navi  bluesquare fa-square" aria-hidden="true"></i>Design</li>
+					<li class="category checkbox"><i class="fa navi redsquare fa-square" aria-hidden="true"></i>Executive</li>
+					<li class="category checkbox"><i class="fa navi greensquare fa-square" aria-hidden="true"></i>Human Resources</li>
 			</ul>
 		</nav>
 	</header>
-	<!-- </div> -->
-	<main>
-		<div class="top-area">
-		<section class="top-bar">
-			<button class="collapse-menu top-menu"><i class="menu-caret1 fa fa-caret-left" aria-hidden="true"></i>
-				<i class="fa fa-bars" aria-hidden="true"></i> <i class="fa menu-caret2" aria-hidden="true"></i>
-			</button>
-			<input type="text" class="search fa" placeholder="&#xf002; Search for a job, task or resume"style="border:1px solid #F1F1F1">
-			<button class="add-user top-menu no-left-border">
-					<i class="fa fa-user-plus" aria-hidden="true"></i>					
-			</button>
-			<button class="top-menu">
-					<i class="fa fa-calendar" aria-hidden="true"></i>			
-			</button>
-			<button class="top-menu">
-					<i class="fa fa-th" aria-hidden="true"></i>			
-			</button>
-		</section>
-	
-		<div class="job-title">
-			<div class="left">
-				<h2> Customer Service Representative </h2>
-				<h5> <i class="fa navi fa-map-marker" aria-hidden="true"></i>San Fransisco, CA</h5>
-				<h5> -</h5>
-				<h5 class="previewlink"> Preview this post </h5>
-			</div>
-			<div class="right">
-				<button class="open-button main-button"><i class="fa fa-circle" aria-hidden="true"></i>
-					OPEN  </button>
-				<button class="top-button main-button"> <i class="fa fa-bookmark" aria-hidden="true"></i> </button>
-				<button class="top-button main-button"> <i class="fa fa-pencil" aria-hidden="true"></i> </button>
-				<button class="top-button main-button"> <i class="fa fa-trash" aria-hidden="true"></i>
+	<main role="main">
+		<section class="top-area" role="job-title">
+			<section class="top-bar" role="search-and-nav">
+				<button class="collapse-menu top-menu">
+					<i class="menu-caret1 fa fa-caret-left" aria-hidden="true"></i>
+					<i class="fa fa-bars" aria-hidden="true"></i> 
+					<i class="fa menu-caret2" aria-hidden="true"></i>
 				</button>
-			</div>
+				<input type="text" class="search fa" placeholder="&#xf002; Search for a job, task or resume"style="border:1px solid #F1F1F1">
+				<button class="add-user top-menu no-left-border">
+					<i class="fa fa-user-plus" aria-hidden="true"></i>		
+				</button>
+				<button class="top-menu">
+					<i class="fa fa-calendar" aria-hidden="true"></i>			
+				</button>
+				<button class="top-menu">
+					<i class="fa fa-th" aria-hidden="true"></i>			
+				</button>
+			</section>	
+			<div class="job-title" role="job-title">
+				<div class="left">
+					<h2> Customer Service Representative </h2>
+					<h5> <i class="fa navi fa-map-marker" aria-hidden="true"></i>San Fransisco, CA</h5>
+					<h5> -</h5>
+					<h5 class="previewlink"> Preview this post </h5>
+				</div>
+				<div class="right">
+					<button class="open-button main-button">
+						<i class="fa fa-circle" aria-hidden="true"></i>
+					OPEN  
+					</button>
+					<button class="top-button main-button"> 
+						<i class="fa fa-bookmark" aria-hidden="true"></i>
+					</button>
+					<button class="top-button main-button"> 
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+					</button>
+					<button class="top-button main-button"> 
+						<i class="fa fa-trash" aria-hidden="true"></i>
+					</button>
+				</div>
 			</div>
 
 
-			<ul class="tabs">
+			<ul class="tabs" role="tabs">
 				<li>SUMMARY</li>
 				<li>APPLICANTS</li>
 				<li>JOB BOARD</li>
@@ -96,89 +100,118 @@
 				<li class="spacer" hidden></li>
 			</ul>
 		</div>
-			<div class="bottom-background">
-			<section class="graphs">
+		<div class="bottom-background">
+			<section class="graphs" role="job-statistics">
 				<div class="left-graphs">
 					<div class="circles">
-					<div class="wrapper" data-anim="base wrapper">
-						<div class="circle-grey circle-specs" data-anim="base left"></div>
-						<div class="circle-color circle1 circle-specs" data-anim="base right"></div>	
-						<div class="circle-color2 circle1 circle-specs" data-anim="base right"></div>	
-					</div>
-					<div class="wrapper" data-anim="base wrapper">
-						<div class="circle-grey circle-specs" data-anim="base left"></div>
-						<div class="circle-color circle2 circle-specs" data-anim="base right"></div>	
-					</div>
-					<div class="wrapper" data-anim="base wrapper">
-						<div class="circle-grey circle-specs" data-anim="base left"></div>
-						<div class="circle-color3 circle3 circle-specs" data-anim="base right"></div>	
-					</div>
+						<div class="wrapper" data-anim="base wrapper" role="applicants">
+							<div class="circle-grey circle-specs" data-anim="base left"></div>
+							<div class="circle-color circle1 circle-specs" data-anim="base right"></div>	
+							<div class="circle-color2 circle1 circle-specs" data-anim="base right"></div>	
+						</div>
+						<div class="wrapper" data-anim="base wrapper" role="interviews">
+							<div class="circle-grey circle-specs" data-anim="base left"></div>
+							<div class="circle-color circle2 circle-specs" data-anim="base right"></div>	
+						</div>
+						<div class="wrapper" data-anim="base wrapper" role="forwards">
+							<div class="circle-grey circle-specs" data-anim="base left"></div>
+							<div class="circle-color3 circle3 circle-specs" data-anim="base right"></div>	
+						</div>
 					</div>
 					<div class="text">
-					<div class="graph-text graph-text-1">
-						<h1>2,700</h1>
-						<h3>Applicants</h3>
-					</div>
-					<div class="graph-text graph-text-2">
-						<h1>1,800</h1>
-						<h3>Interviews</h3>
-					</div>
-					<div class="graph-text graph-text-3">
-						<h1>900</h1>
-						<h3>Forwards</h3>
-					</div>
+						<div class="graph-text graph-text-1">
+							<h1>2,700</h1>
+							<h3>Applicants</h3>
+						</div>
+						<div class="graph-text graph-text-2">
+							<h1>1,800</h1>
+							<h3>Interviews</h3>
+						</div>
+						<div class="graph-text graph-text-3">
+							<h1>900</h1>
+							<h3>Forwards</h3>
+						</div>
 					</div>
 					<div class="total-button">
 						<button class="main-button">TOTALS - Out of 3,600 views</button>
 					</div>
 				</div>
 				<div class="right-graphs">
-					<img class="bar-graph" src="images/graph.png">
+					<img class="bar-graph" src="images/graph.png" alt="bar graph of applicants per day over the last two weeks">
 					<div class="bar-graph"></div>
-					<div class="applicants-button"><button class="main-button">APPLICANTS/DAY</button> </div>
+					<div class="applicants-button"><button class="main-button">APPLICANTS/DAY</button> 
+					</div>
 				</div>
 			</section>
-<div class="graph-collapse-section">
-	<hr> <button class="top-button main-button collapse"><i class="fa collapse-icon fa-angle-up" aria-hidden="true"></i>
-	</button> <hr>
-</div>
+		<div class="graph-collapse-section">
+			<hr> 
+			<button class="top-button main-button collapse">
+				<i class="fa collapse-icon fa-angle-up" aria-hidden="true"></i>
+			</button> 
+			<hr>
+		</div>
 
-			<div class="bottom-section">
+			<div class="bottom-section" role="job-description">
 				<section class="job-description">
-				<dl>
-					<div class="tableheader"><dt>JOB DESCRIPTION </dt>
-					<dd><button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button></dd>  </div>
-					<div class="job-listing after-border-fixes"><dt>POSITION TITLE</dt>
-					<dd>Customer Service Representative</dd> </div>
-					<div class="job-listing both-border-fixes"><dt>LOCATION</dt>
-					<dd>San Fransisco CA</dd> </div>
-					<div class="job-listing both-border-fixes"><dt>EMPLOYMENT TYPE</dt>
-					<dd>Full-time</dd> </div>
-					<div class="job-listing both-border-fixes"><dt>EXPERIENCE</dt>
-					<dd>Mid-level</dd> </div>
-					<div class="job-listing both-border-fixes"><dt>STATUS</dt>
-					<dd>Open</dd> </div>
-					<div class="job-listing both-border-fixes"><dt class="top-align">DESCRIPTION</dt>
-					<dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsib le for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwich.</dd> </div>
-					<div class="job-listing both-border-fixes center-align"><div class="hire-fix"><dt>HIRING LEAD</dt>
-					<img src="images/IMG_1134.JPG" class="profile small-photo"><dd class="hiring-lead">  Thomas Laird</dd> </div></div>
-					<div class="job-listing before-border-fixes dl-noborder"><dt>APPROVED SALARY</dt>
-					<dd>$58,000</dd> </div>
+					<dl>
+						<div class="tableheader">
+							<dt>JOB DESCRIPTION </dt>
+							<dd><button class="edit"><i class="fa fa-pencil" aria-hidden="true"></i>EDIT</button></dd> 
+						</div>
+						<div class="job-listing after-border-fixes">
+							<dt>POSITION TITLE</dt>
+							<dd>Customer Service Representative</dd>
+						</div>
+						<div class="job-listing both-border-fixes">
+							<dt>LOCATION</dt>
+							<dd>San Fransisco CA</dd>
+						</div>
+						<div class="job-listing both-border-fixes">
+							<dt>EMPLOYMENT TYPE</dt>
+							<dd>Full-time</dd>
+						</div>
+						<div class="job-listing both-border-fixes">
+							<dt>EXPERIENCE</dt>
+							<dd>Mid-level</dd>
+						</div>
+						<div class="job-listing both-border-fixes">
+							<dt>STATUS</dt>
+							<dd>Open</dd>
+						</div>
+						<div class="job-listing both-border-fixes">
+							<dt class="top-align">DESCRIPTION</dt>
+							<dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsib le for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwich.</dd>
+						</div>
+						<div class="job-listing both-border-fixes center-align">
+							<div class="hire-fix">
+								<dt>HIRING LEAD</dt>
+								<img src="images/IMG_1134.JPG" class="profile small-photo" alt="profile picture for the hiring manager for this job">
+								<dd class="hiring-lead">  Thomas Laird</dd>
+							</div>
+						</div>
+						<div class="job-listing before-border-fixes dl-noborder">
+							<dt>APPROVED SALARY</dt>
+							<dd>$58,000</dd>
+						</div>
 				</dl>
 			</section>
 
 			<section class="share">
 				<div class="bottom-right">
-					<div class="social-link facebook"><i class="fa social-icon fa-facebook" aria-hidden="true"> </i>Post to Facebook
+					<div class="social-link facebook">
+						<i class="fa social-icon fa-facebook" aria-hidden="true"> </i>Post to Facebook
 					</div>
-					<div class="social-link twitter"> <i class="fa social-icon fa-twitter" aria-hidden="true"> </i>Tweet this Job
+					<div class="social-link twitter"> 
+						<i class="fa social-icon fa-twitter" aria-hidden="true"> </i>Tweet this Job
 					</div>
-					<div class="social-link linkedin"><i class="fa social-icon fa-linkedin-square" aria-hidden="true"></i>
-						Post to LinkedIn </div>
+					<div class="social-link linkedin">
+						<i class="fa social-icon fa-linkedin-square" aria-hidden="true"></i>
+						Post to LinkedIn 
+					</div>
 					
 					<div class="copy-section">
 						<div>
-						<h3> <i class="fa fa-globe" aria-hidden="true"></i>
+						<h3><i class="fa fa-globe" aria-hidden="true"></i>
 							Link to this Job</h3>
 						<h6> Tousled master cleanse austin artisan everyday carry kogi sustainable taxidermy kickstarter neutra street art. </h6>
 						<div class="copy-buttonlink">
@@ -209,12 +242,10 @@
 		</div>
 </div>
 
-
-
-
-			<script src="https://d3js.org/d3.v4.min.js"></script>
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			<script>window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>')</script>
-			<script src="scripts/script.js" type="text/javascript"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="scripts/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="scripts/script.js" type="text/javascript"></script>
 </body>
+
 </html>
