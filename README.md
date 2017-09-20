@@ -9,4 +9,4 @@ The goal of this project was to create a site that mimics the layout of a static
 
 ### My Composition:
 
-![My Composition](images/TL-comp-3.png?raw=true)
+![My Composition](images/TL-Comp-3.png?raw=true)
