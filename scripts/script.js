@@ -39,11 +39,22 @@ $('.collapse-menu').on('click',hideNav);
 function hideGraphs() {
   $('.collapse-icon').toggleClass('fa-angle-up').toggleClass('fa-angle-down');
   if ($('.collapse-icon').hasClass('fa-angle-down')) {
-    $('.graphs').hide();
+    $('.graphs').hide(1000);
   } else {
-    $('.graphs').show();
+    $('.graphs').show(1000);
   }
 }
 
 
 $('.graph-collapse-section button').on('click', hideGraphs);
+
+function moveSearchIcon() {
+  $(this).focus(function() {
+    $(this).attr('placeholder',$.parseHTML("&#xf002;")[0].data);
+  });
+  $(this).blur(function() {
+    $(this).attr('placeholder',$.parseHTML("&#xf002; Search for a job, task or resume")[0].data);
+  });
+}
+
+$('input.search').each(moveSearchIcon);
