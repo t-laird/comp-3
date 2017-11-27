@@ -48,13 +48,39 @@ function hideGraphs() {
 
 $('.graph-collapse-section button').on('click', hideGraphs);
 
-function moveSearchIcon() {
-  $(this).focus(function() {
-    $(this).attr('placeholder',$.parseHTML("&#xf002;")[0].data);
-  });
-  $(this).blur(function() {
-    $(this).attr('placeholder',$.parseHTML("&#xf002; Search for a job, task or resume")[0].data);
-  });
+
+const searchIcon = document.querySelector('.fa-search');
+const searchInput = document.querySelector('.search');
+
+function expandSearch() {
+  searchInput.classList.add('expand');
+  searchInput.value = "";
+  searchInput.focus();
 }
 
-$('input.search').each(moveSearchIcon);
+searchIcon.addEventListener('click', expandSearch);
+
+function closeSearchWindow(event) {
+  if (!$(event.target).hasClass('search') && !$(event.target).hasClass('fa-search')) {
+    searchInput.classList.remove('expand');
+  }
+}
+
+function closeSearchBlur() {
+  console.log(document.activeElement);
+  searchInput.classList.remove('expand');
+}
+
+function checkForSearchExpand() {
+  if ($(document.activeElement).hasClass('search')) {
+   searchInput.classList.add('expand');
+  }
+}
+
+
+
+$('body').on('click', closeSearchWindow);
+$(window).on('focus', checkForSearchExpand);
+
+$(window).blur(closeSearchBlur);
+
